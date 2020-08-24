@@ -1,0 +1,163 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#loginform {
+  border: 1px solid blue;
+  border-color: blue;
+  border-collapse: collapse;
+  background-position: fixed;
+  
+  
+}
+
+#loginform img {
+  background-attachment: fixed;
+  width: auto;
+  background-size: contain;
+}
+
+#loginform td,th {
+  border-color: blue;
+  
+}
+
+#login1 {
+  background-size: cover;
+  background:url('banner-tet-2019.png');
+  height: auto;
+}
+
+#login2 {
+  width: 90%;
+  background-size: cover;
+  background:url('2.png');
+  background-attachment:  fixed;
+  background-repeat: none;
+  background-size: initial;
+  height: auto;
+}
+#login {
+  background-color: rgb(18, 129, 24);
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  width: 30%;
+  height: auto;
+  border-collapse: collapse;
+  border: 1px solid rgb(18, 129, 24);
+  padding: 10px 20px;
+}
+
+
+#login:hover {
+  border: 3px solid rgb(255, 255, 255);
+
+}
+
+
+fieldset {
+  width: 27%;
+  float: right;
+  margin-right: 16%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(18, 90, 184,0.3);
+}
+
+#topnav ul{
+  margin-left: 5%;  
+}
+
+
+
+#topnav li {
+  display: inline-block;
+  padding: 1%;
+  font-size: 25px;
+  color: rgb(0, 128, 239);
+}
+
+#topnav li:hover {
+  background-color: rgb(0, 128, 239);
+  opacity: 0.6;
+  color: white;
+  font-weight: bold;
+}
+
+#topnav input {
+  font-size: 25px;
+  border: 1px rgb(0, 128, 239) solid;
+  color: rgb(0, 128, 239);
+}
+
+.grid {
+  
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 20px;
+  align-items: stretch;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  100px 300px 300px 100px;
+    grid-auto-rows: 300px;
+  grid-template-areas: 
+
+  "topnav topnav topnav topnav"
+  "aside main main figure"
+  "aside main main figure"
+  "footer footer footer footer";  
+  
+
+
+}
+
+
+.box {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  width: auto;
+  border: 1px black solid;
+  width: auto;
+}
+
+
+#topnav {
+  grid-area: topnav;
+  border: 2px solid blue;
+  text-align: center;
+}
+
+header{
+  grid-area: header;
+}
+
+
+main {
+  grid-area: main;
+  
+  background-color: gray;
+  
+}
+
+aside {
+  grid-area: aside;
+  
+  background-color: gray;
+  
+}
+
+figure {
+  grid-area: figure;
+  
+  background-color: gray;
+  
+}
+
+footer {
+  grid-area: footer;
+  border: 1px solid blue;
+  background-color: blue;
+}
